@@ -16,10 +16,6 @@ class TestApp(EWrapper, EClient):
     def nextValidId(self, orderId: int):
         self.reqPositions()
 
-
-    # def error(self, reqId: TickerId, errorCode: int, errorString: str, advancedOrderRejectJson=""):
-    #     print("error",reqId, errorCode, errorString, advancedOrderRejectJson)
-
     def position(self, account: str, contract: Contract, position: Decimal, avgCost: float):
         position = account + "," + str(contract) + "," + str(position) + "," + str(avgCost)
         data.append([position])

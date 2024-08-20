@@ -5,7 +5,7 @@ import time
 import threading
 import csv
 
-port = 4002
+port = 4001
 data = []
 
 class TestApp(EWrapper, EClient):

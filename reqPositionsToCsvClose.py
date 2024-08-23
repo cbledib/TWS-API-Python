@@ -8,7 +8,7 @@ import threading
 import csv
 import re
 
-port = 7497
+port = 4001
 data = []
 
 class TestApp(EWrapper, EClient):
